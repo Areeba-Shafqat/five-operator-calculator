@@ -16,23 +16,16 @@ const answer = await inquirer.prompt([
 ]);
 
 // Aplly Condition to check equality of operators
-if(answer.operators === "Addition"){
-    console.log(answer.firstNumber + answer.secondNumber);    
-} 
-else if(answer.operators === "Subtraction"){
-    console.log(answer.firstNumber - answer.secondNumber);    
-} 
-else if(answer.operators === "Multiplication"){
-    console.log(answer.firstNumber * answer.secondNumber);    
-} 
-else if(answer.operators === "Division"){
-    console.log(answer.firstNumber / answer.secondNumber);    
-} 
-else if(answer.operators === "Power"){
-    console.log(Math.pow(answer.firstNumber,answer.secondNumber));    
-} 
-else {
-    console.log("Please Select Valid Operator");
-    
-}
-
+if (answer.operators === "Addition") {
+  console.log(answer.firstNumber + answer.secondNumber);
+} else if (answer.operators === "Subtraction") {
+  console.log(answer.firstNumber - answer.secondNumber);
+} else if (answer.operators === "Multiplication") {
+  console.log(answer.firstNumber * answer.secondNumber);
+} else if (answer.operators === "Division") {
+  console.log(answer.firstNumber / answer.secondNumber);
+} else if (answer.operators === "Power") {
+  console.log(Math.pow(answer.firstNumber, answer.secondNumber));
+} else {
+  console.log("Please Select Valid Operator");
+};
